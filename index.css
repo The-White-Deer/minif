@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Overpass&family=Roboto:wght@500&display=swap');
+
+::selection {
+    background-color: #C3C70D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #272727;
+    padding: 2rem 2rem 0 2rem
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#env {
+    background: #424242;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Inconsolata', monospace;
+    width: 100%;
+    height: 32rem;
+    resize: vertical;
+    margin: 1.3rem 0;
+}
+
+h1 {
+    color: #FCFF74;
+    font-family: 'overpass', sans-serif;
+    font-weight: 500;
+    font-size: 2.25rem;
+    animation: flash forwards infinite 12s;
+}
+
+#minify-btn {
+    border: none;
+    outline: none;
+    background: #C3C70D;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2.25rem;
+    cursor: pointer;
+    width: fit-content;
+    padding: 1rem;
+    transition: background 0.3s;
+}
+
+#minify-btn:hover {
+    background: #d9db66;
+}
+
+@keyframes flash {
+    from {
+        color: #d9db66;
+    }
+
+    50% {
+        color: #f7f8cd
+    }
+
+    to {
+        color: #d9db66;
+    }
+}
